@@ -1,0 +1,93 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background: #4db1ff;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  background: black;
+  color: white;
+  font-family: Arial,sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+header > h1{
+  background: black;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header > p{
+  background: black;
+  color: white;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-90%);
+}
+
+.row{
+  width: 60%;
+  margin:auto;
+  margin-top: 100px;
+  color: black;
+  font-family: Arial,sans-serif;
+}
+.column{
+  float:left;
+  width:33.3333333%;
+  height: 0;
+  padding-bottom: 33.3333333%;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.column > .text{
+  padding: 10px;
+  font-size: 20px;
+}
+
+.column:hover{
+  transform: scale(1.05);
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text{
+  color: white;
+}
+.text > p{
+  margin-top: 10%;
+}
+a{
+  color: #bbbbbb;
+  text-decoration: none;
+}
+
+#first{
+  background-image: url("gravity.png");
+  background-size: cover;
+}
+#second{
+  background-image: url("firefox.jpeg");
+  background-size: cover;
+}
+#third{
+  background-image: url("pepsi.png");
+  background-size: cover;
+}

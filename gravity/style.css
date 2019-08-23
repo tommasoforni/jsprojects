@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.box{
+  background: #00ccff;
+  color: black;
+  padding: 1%;
+  width: 300px;
+  height: auto;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  opacity: 0.8;
+}
+.container{
+  width: 100%;
+  margin-top: 10px;
+}
+.text{
+  float:left;
+  width:50%;
+}
+.slider{
+  margin-top: 5px;
+  float: left;
+  width:50%;
+  background: black;
+  -webkit-appearance: none;  /* Override default CSS styles */
+   appearance: none;
+   height: 5px; /* Specified height */
+   background: white; /* Grey background */
+   outline: none; /* Remove outline */
+   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+   transition: opacity .2s;
+ }
+
+ /* Mouse-over effects */
+ .slider:hover {
+   opacity: 1; /* Fully shown on mouse-over */
+ }
+
+ /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+ .slider::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+   appearance: none;
+   width: 10px; /* Set a specific slider handle width */
+   height: 10px; /* Slider handle height */
+   background: black; /* Green background */
+   cursor: pointer; /* Cursor on hover */
+ }
+
+ .slider::-moz-range-thumb {
+   width: 10px; /* Set a specific slider handle width */
+   height: 10px; /* Slider handle height */
+   background: black; /* Green background */
+   cursor: pointer; /* Cursor on hover */
+ }
+
+.button{
+  float: left;
+  width:50%;
+  background-color: #0033cc; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition-duration:0.3s;
+  transition-duration: 0.3s;
+  opacity: 0.5;
+  font-weight: bold;
+}
+.button:hover{
+  opacity:1;
+}
+.button:focus{
+  outline: 0;
+}
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+canvas {
+  display: block;
+}
